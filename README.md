@@ -1,12 +1,12 @@
 # 📈 House Price Prediction using Linear Regression
 
-This project demonstrates the implementation of **Simple Linear Regression** using **Scikit-learn** to predict house prices based on the living area (`sqft_living`). It covers the complete machine learning workflow, including data loading, preprocessing, model training, evaluation, and visualization.
+This project demonstrates the implementation of **Simple Linear Regression** using **Scikit-learn** to predict house prices based on the **living area (`sqft_living`)**. It covers the complete machine learning workflow, including data loading, preprocessing, model training, evaluation, and visualization.
 
 ---
 
 ## 📌 Objective
 
-The objective of this project is to understand and implement **Linear Regression** for predicting house prices using a real-world housing dataset.
+The objective of this project is to understand and implement **Simple Linear Regression** for predicting house prices using a real-world housing dataset.
 
 ---
 
@@ -24,13 +24,13 @@ The objective of this project is to understand and implement **Linear Regression
 
 **Dataset:** House Price Dataset
 
-The dataset contains various features related to houses such as:
+The dataset contains several house-related features, including:
 
 - Price
 - Bedrooms
 - Bathrooms
-- Living Area (sqft_living)
-- Lot Area (sqft_lot)
+- Living Area (`sqft_living`)
+- Lot Area (`sqft_lot`)
 - Floors
 - Waterfront
 - View
@@ -38,28 +38,31 @@ The dataset contains various features related to houses such as:
 - Grade
 - Year Built
 - Year Renovated
-- Location Details
+- Street
+- City
+- State
+- Country
 
-**Target Variable:**
+### Target Variable
 
-- `price`
+- **price**
 
-**Feature Used (Simple Linear Regression):**
+### Feature Used
 
-- `sqft_living`
+- **sqft_living**
 
 ---
 
 ## 📋 Project Workflow
 
 1. Import the required libraries.
-2. Load the dataset using Pandas.
-3. Explore the dataset.
-4. Select feature (`sqft_living`) and target (`price`).
+2. Load the housing dataset.
+3. Explore and understand the dataset.
+4. Select the feature (`sqft_living`) and target (`price`).
 5. Split the dataset into training and testing sets.
 6. Train the Linear Regression model.
 7. Predict house prices.
-8. Evaluate model performance using:
+8. Evaluate the model using:
    - Mean Absolute Error (MAE)
    - Mean Squared Error (MSE)
    - R² Score
@@ -69,40 +72,48 @@ The dataset contains various features related to houses such as:
 
 ## 📊 Model Evaluation Metrics
 
-The following evaluation metrics are used:
+The model performance is evaluated using:
 
-- **Mean Absolute Error (MAE)**
-- **Mean Squared Error (MSE)**
-- **R² Score**
+- ✅ Mean Absolute Error (MAE)
+- ✅ Mean Squared Error (MSE)
+- ✅ R² Score
 
-These metrics help evaluate the accuracy and performance of the regression model.
+These metrics help determine how accurately the model predicts house prices.
 
 ---
 
-## 📉 Regression Plot
+## 📈 Regression Plot
 
-The project generates a regression plot showing:
+The generated regression graph displays:
 
-- 🔵 Blue Points → Actual House Prices
+- 🔵 Blue Dots → Actual House Prices
 - 🔴 Red Line → Predicted Regression Line
 
-The generated plot is saved as:
+---
 
-```
-Regression.png
-```
+# 📸 Project Screenshots
+
+## 💻 Console Output
+
+![Console Output](screenshots/output%20(2).png)
+
+---
+
+## 📊 Regression Plot
+
+![Regression Plot](screenshots/Regression.png)
 
 ---
 
 ## ▶️ How to Run
 
-### 1. Install Dependencies
+### Step 1: Install Required Libraries
 
 ```bash
 pip install pandas matplotlib scikit-learn
 ```
 
-### 2. Run the Project
+### Step 2: Run the Project
 
 ```bash
 python task3.py
@@ -113,12 +124,12 @@ python task3.py
 ## 📁 Project Structure
 
 ```
-Task3/
+Linear-Regression/
 │── House-Price.csv
 │── task3.py
 │── README.md
 │── screenshots/
-│   ├── output.png
+│   ├── output (2).png
 │   └── Regression.png
 ```
 
@@ -128,13 +139,22 @@ Task3/
 
 ```
 ========== MODEL EVALUATION ==========
+
 Mean Absolute Error (MAE): XXXXX.XX
+
 Mean Squared Error (MSE): XXXXX.XX
+
 R² Score: 0.XX
 
 ========== MODEL PARAMETERS ==========
+
 Coefficient (Slope): XXXXX.XX
+
 Intercept: XXXXX.XX
+
+========== INTERPRETATION ==========
+
+Every additional square foot increases the predicted house price.
 ```
 
 ---
@@ -142,32 +162,22 @@ Intercept: XXXXX.XX
 ## 📚 What I Learned
 
 - Understanding Simple Linear Regression
-- Preparing data for machine learning
+- Data preprocessing using Pandas
 - Splitting datasets into training and testing sets
-- Training regression models using Scikit-learn
-- Evaluating regression performance using MAE, MSE, and R² Score
-- Visualizing regression results using Matplotlib
+- Building Machine Learning models using Scikit-learn
+- Evaluating regression models using MAE, MSE, and R² Score
+- Visualizing data using Matplotlib
 - Interpreting regression coefficients
 
 ---
 
 ## 🚀 Future Improvements
 
-- Implement Multiple Linear Regression using additional features.
-- Perform feature engineering for improved accuracy.
-- Apply feature scaling where required.
-- Compare Linear Regression with other regression algorithms.
-- Build an interactive web application for house price prediction.
-
----
-
-## 👨‍💻 Author
-
-**Pragya Pathak**
-
-B.Tech Computer Science Engineering (Machine Learning)
-
-Lovely Professional University
+- Implement Multiple Linear Regression.
+- Perform feature engineering.
+- Apply feature scaling.
+- Compare Linear Regression with Ridge and Lasso Regression.
+- Build a web application for house price prediction using Flask or Streamlit.
 
 ---
 
@@ -175,7 +185,24 @@ Lovely Professional University
 
 - ✔ Real-world House Price Dataset
 - ✔ Simple Linear Regression
+- ✔ Data Preprocessing
+- ✔ Model Training
+- ✔ Prediction & Evaluation
 - ✔ Data Visualization
-- ✔ Model Evaluation
-- ✔ Easy to Understand
 - ✔ Beginner-Friendly Machine Learning Project
+
+---
+
+## 👨‍💻 Author
+
+**Pragya Pathak**
+
+**B.Tech Computer Science Engineering (Machine Learning)**
+
+**Lovely Professional University**
+
+---
+
+## 🌟 Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
